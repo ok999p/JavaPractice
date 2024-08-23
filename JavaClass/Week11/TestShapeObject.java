@@ -4,27 +4,27 @@ import java.util.ArrayList;
 
 public class TestShapeObject {
     public static void main(String[] args) {
-        ArrayList<Shape> shapes = new ArrayList<>();
+        ArrayList<Shape> Spape2 = new ArrayList<>();
 
-        shapes.add(new Square("Orange", 4));
-        shapes.add(new Square("Orange", 10));
-        shapes.add(new Square("Orange", 5));
+        Spape2.add(new Square("Orange", 4));
+        Spape2.add(new Square("Orange", 10));
+        Spape2.add(new Square("Orange", 5));
 
-        shapes.add(new Circle("Violet", 3));
-        shapes.add(new Circle("Violet", 6));
-        shapes.add(new Circle("Violet", 10));
+        Spape2.add(new Circle("Violet", 3));
+        Spape2.add(new Circle("Violet", 6));
+        Spape2.add(new Circle("Violet", 10));
 
-        displayAllShape(shapes);
+        displayAllShape(Spape2);
 
-        int[] squarePerimeterPositions = findMinMaxPerimeter(shapes, Square.class);
+        int[] squarePerimeterPositions = findMinMaxPerimeter(Spape2, Square.class);
         System.out.println("Square:");
-        System.out.println("Max Perimeter is " + shapes.get(squarePerimeterPositions[1]).getPerimeter() + " of No. " + (squarePerimeterPositions[1]));
-        System.out.println("Min Perimeter is " + shapes.get(squarePerimeterPositions[0]).getPerimeter() + " of No. " + (squarePerimeterPositions[0]));
+        System.out.println("Max Perimeter is " + Spape2.get(squarePerimeterPositions[1]).getPerimeter() + " of No. " + (squarePerimeterPositions[1]));
+        System.out.println("Min Perimeter is " + Spape2.get(squarePerimeterPositions[0]).getPerimeter() + " of No. " + (squarePerimeterPositions[0]));
 
-        int[] circleCircumferencePositions = findMinMaxCircumference(shapes, Circle.class);
+        int[] circleCircumferencePositions = findMinMaxCircumference(Spape2, Circle.class);
         System.out.println("Circle:");
-        System.out.println("Max Circumference is " + shapes.get(circleCircumferencePositions[1]).getPerimeter() + " of No. " + (circleCircumferencePositions[1]));
-        System.out.println("Min Circumference is " + shapes.get(circleCircumferencePositions[0]).getPerimeter() + " of No. " + (circleCircumferencePositions[0]));
+        System.out.println("Max Circumference is " + Spape2.get(circleCircumferencePositions[1]).getPerimeter() + " of No. " + (circleCircumferencePositions[1]));
+        System.out.println("Min Circumference is " + Spape2.get(circleCircumferencePositions[0]).getPerimeter() + " of No. " + (circleCircumferencePositions[0]));
     }
 
     public static int[] findMinMaxPerimeter(ArrayList<Shape> shapes, Class<?> shapeType) {
