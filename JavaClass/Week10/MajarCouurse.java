@@ -1,3 +1,6 @@
+package JavaClass.Week10;
+
+
 public class MajarCouurse extends Course {
     protected int year;
 

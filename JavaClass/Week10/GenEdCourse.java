@@ -1,3 +1,6 @@
+package JavaClass.Week10;
+
+
 public class GenEdCourse extends Course {
     GenEdCourse(String id, int u, String g) {
         super(id, u, g);

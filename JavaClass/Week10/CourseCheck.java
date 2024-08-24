@@ -1,3 +1,6 @@
+package JavaClass.Week10;
+
+
 public class CourseCheck {
     public static void main(String[] args) {
         Course[] c = new Course[7];

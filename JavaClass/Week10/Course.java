@@ -1,3 +1,6 @@
+package JavaClass.Week10;
+
+
 public class Course {
     private String courseID;
     private int unit;

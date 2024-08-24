@@ -1,4 +1,4 @@
-package Set2;
+package JavaClass.Week10.Set2;
 
 public class GenEdCourse extends Course {
     GenEdCourse(String id, int u, String g) {

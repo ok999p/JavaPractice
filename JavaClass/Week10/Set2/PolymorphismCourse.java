@@ -1,38 +1,38 @@
-package Set2;
+package JavaClass.Week10.Set2;
 
 import java.util.ArrayList;
 
 public class PolymorphismCourse {
     public static void main(String[] args) {
-        ArrayList<Course> c = new ArrayList<Course>();
-        c.add(new Course("GEN64-124", 4, "D+"));
-        c.add(new Course("GEN64-183", 1, "A"));
-        c.add(new Course("ITD64-172", 2, "C+"));
-        c.add(new MajorCourse("COE64-211", 4, "D", 2));
-        c.add(new MajorCourse("COE64-212", 4, "D", 2));
-        c.add(new MajorCourse("COE64-322", 1, "W", 2));
+        ArrayList<Course> C = new ArrayList<Course>();
+        C.add(new Course("GEN64-124", 4, "D+"));
+        C.add(new Course("GEN64-183", 1, "A"));
+        C.add(new Course("ITD64-172", 2, "C+"));
+        C.add(new MajorCourse("COE64-211", 4, "D", 2));
+        C.add(new MajorCourse("COE64-212", 4, "D", 2));
+        C.add(new MajorCourse("COE64-322", 1, "W", 2));
         System.out.println("Course : ");
-        displayCourse(c);
-        double gpa = calGPA(c);
+        displayCourse(C);
+        double gpa = calGPA(C);
         System.out.println("=============================");
-        System.out.println("Enroll : " + c.size() + "\tPass : " + calPassSubject(c));
+        System.out.println("Enroll : " + C.size() + "\tPass : " + calPassSubject(C));
         System.out.println("GPA : " + gpa);
         
         String id = "GEN64-183";
-        for (int i = 0; i < c.size(); i++) {
-            if (c.get(i).getCourseID().equals(id)) {
-                c.remove(i);
-                i = c.size();            
+        for (int i = 0; i < C.size(); i++) {
+            if (C.get(i).getCourseID().equals(id)) {
+                C.remove(i);
+                i = C.size();
             }
         }
         System.out.println();
         System.out.println("Course : ");
-        c.add(new MajorCourse("COE64-447", 4, "F", 4));
-        changeGrade(c, "ITD64-172", "W");
-        displayCourse(c);
+        C.add(new MajorCourse("COE64-447", 4, "F", 4));
+        changeGrade(C, "ITD64-172", "W");
+        displayCourse(C);
         System.out.println("=============================");
-        gpa = calGPA(c);
-        System.out.println("Enroll : " + c.size() + "\tPass : " + calPassSubject(c));
+        gpa = calGPA(C);
+        System.out.println("Enroll : " + C.size() + "\tPass : " + calPassSubject(C));
         System.out.println("GPA : " + gpa);
 
 

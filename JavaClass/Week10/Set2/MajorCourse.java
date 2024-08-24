@@ -1,4 +1,4 @@
-package Set2;
+package JavaClass.Week10.Set2;
 
 public class MajorCourse extends Course {
     protected int year;
