@@ -3,11 +3,11 @@ package JavaClass.Week10;
 
 public class CourseCheck {
     public static void main(String[] args) {
-        Course[] c = new Course[7];
+        Course[] c = new Course[6];
         c[0] = new Course("GEN64-124", 4, "D+");
         c[1] = new Course("GEN64-183", 1, "A");
         c[2] = new Course("ITD64-172", 2, "C+");
-        c[3] = new MajarCouurse("COE64-211", 4, "D", 2);
+        c[3] = new MajarCouurse("COE64-211" , 4, "D", 2);
         c[4] = new MajarCouurse("COE64-212", 4, "D", 2);
         c[5] = new MajarCouurse("COE64-322", 1, "W", 2);
         displayCourse(c);
@@ -83,7 +83,7 @@ public class CourseCheck {
 
     public static void changeGrade(Course[] c, String id, String g) {
         for (int i = 0; i < c.length; i++) {
-            if (c[i] != null && c[i].getCourseID().equals(id)) { 
+            if (c[i].getCourseID().equals(id)) {
                 c[i].setGrade(g);
             }
         }

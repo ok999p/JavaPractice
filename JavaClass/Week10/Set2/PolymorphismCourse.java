@@ -83,7 +83,7 @@ public class PolymorphismCourse {
                         gradepoint = 1.0;
                         break;
                     default:
-                        gradepoint = 0.0; // For any other grade like "F"
+                        gradepoint = 0.0;
                         break;
                 }
                 sum += gradepoint * course.getUnit();

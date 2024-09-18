@@ -48,6 +48,7 @@ public class CountNoOfGrade {
                 System.out.print("*");
             }
             System.out.println();
+
         }
     }
 }

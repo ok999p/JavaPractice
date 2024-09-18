@@ -9,7 +9,6 @@ public class TestShapeObject {
         Spape2.add(new Square("Orange", 4));
         Spape2.add(new Square("Orange", 10));
         Spape2.add(new Square("Orange", 5));
-
         Spape2.add(new Circle("Violet", 3));
         Spape2.add(new Circle("Violet", 6));
         Spape2.add(new Circle("Violet", 10));
